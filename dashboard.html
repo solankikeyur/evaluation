@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Dashboard</title>
+    <style>
+        .blue{
+            background-color: lightskyblue;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="row">
+            <div class="col-md-2 blue">
+                <label id="welcomeMessage"></label>
+                <ul>
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="users.html">Users</a>
+                    </li>
+                    <li>
+                        <a href="usersession.html">Login Session</a>
+                    </li>
+                    <li>
+                        <input type="button" id="btnLogout" class="btn btn-danger" value="Logout">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+               <label>User < 18 years</label><br>
+               <label id="lessThanEighteen"></label><br>
+               <label>between 18 and 50</label><br>
+               <label id="btwnEf"></label><br>
+               <label>greater than 50</label><br>
+               <label id="grtF"></label>
+            </div>
+        </div>
+    
+</body>
+<script src="js/dashboard.js"></script>
+</html>

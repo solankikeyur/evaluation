@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Register Here</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="registerName">Name</label>
+            <input type="text" id="registerName" class="form-control">
+            <label for="registerEmail">E-Mail</label>
+            <input type="email" id="registerEmail" class="form-control">
+            <label for="registerPassword">Password</label>
+            <input type="text" id="registerPassword" class="form-control">
+            <label for="registerConPassword">Confirm Password</label>
+            <input type="text" id="registerConPassword" class="form-control">
+            <label for="registerCity">City</label>
+            <select id="registerCity" class="form-control">
+                <option disabled selected value="not">Select City</option>
+                <option value="Veraval">Veraval</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Rajkot">Rajkot</option>
+            </select>
+            <label for="registerState">State</label>
+            <select id="registerState" class="form-control">
+                <option disabled selected value="not">Select State</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            </select>
+            <input type="checkbox" id="registerTerms"><label for="registerTerms">Terms & Conditions</label>
+            <input type="button" id="btnRegister" value="Register" class="btn btn-success form-control">
+        </form>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

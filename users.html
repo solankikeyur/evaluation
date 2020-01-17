@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Users</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-2 blue">
+            <label id="welcomeMessage"></label>
+            <ul>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+                <li>
+                    <a href="usersession.html">Login Session</a>
+                </li>
+                <li>
+                    <input type="button" id="btnLogout" class="btn btn-danger" value="Logout">            </ul>
+        </div>
+        <div class="col-md-10">
+            <h4>Add User</h4><hr>
+            <form>
+                <label for="txtUserName">Name</label>
+                <input type="text" class="form-control" id="txtUserName" placeholder="Enter Name">
+                <label for="txtUserEmail">E-mail</label>
+                <input type="email" class="form-control" id="txtUserEmail" placeholder="Enter Email">
+            
+                <label for="txtUserPassword">Password</label>
+                <input type="password" class="form-control" id="txtUserPassword" placeholder="Enter Password">
+                <label for="txtUserDob">Birthdate</label>
+                <input type="date" class="form-control" id="txtUserDob">
+                <input type="button" class="btn btn-success form-control" id="btnAddUser" value="Add">
+            </form>
+
+            <hr>
+            <h4>User Added</h4>
+            <hr>
+            <table class="table" id="userTable">
+                <tr>
+                    <td>Name</td>
+                    <td>E-mail</td>
+                    <td>Password</td>
+                    <td>Birthdate</td>
+                    <td>Age</td>
+                    <td>Actions</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+<script src="js/users.js"></script>
+</html>
